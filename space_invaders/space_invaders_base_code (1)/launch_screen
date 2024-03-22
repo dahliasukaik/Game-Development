@@ -1,0 +1,37 @@
+import pygame as pg
+from settings import Settings
+
+
+class LaunchScreen:
+    def title():
+       pass
+    def show_aliens():
+       pass
+    def show_values():
+       pass
+       
+    def play_button():
+       pass
+    def play_button():
+       pass
+       
+    
+
+    self.screen.fill(self.settings.bg_color)
+
+    while not finished:
+      self.check_events()    # exits if Cmd-Q on macOS or Ctrl-Q on other OS
+
+      if self.game_active or self.first:
+        self.first = False
+        self.screen.fill(self.settings.bg_color)
+        self.ship.update()
+        
+        self.aliens.update()   # when we have aliens
+        self.sb.update()
+        self.barrier.update()
+      else:
+        self.play_button.update()  
+      
+      pg.display.flip()
+      time.sleep(0.02)
